@@ -8,7 +8,8 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #414141, rgb(50, 57, 58), rgb(20, 17, 19), #414141);
+    /* background: linear-gradient(135deg, #414141, rgb(50, 57, 58), rgb(20, 17, 19), #414141); */
+    background: white;
     background-size: cover;
     padding: 1rem;
 }
@@ -61,7 +62,9 @@ input {
 button {
     border: none;
     outline: none;
-    padding: 1.1em 3em;
+    padding: 1rem 1.3rem;
+    margin: 0.4rem;
+    /* padding: 1.1em 3em; */
     border-radius: 4em;
     background: #0ff;
     color: #000;
@@ -77,9 +80,9 @@ ul li {
     margin: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 2rem;
-    background-color: rgba(99, 99, 99, 0.1);
-    color: rgb(139, 139, 139);
-    box-shadow: 0px 0px 2px rgb(139, 139, 139);
+    background-color: rgba(114, 114, 114, 0.398);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px 1px rgb(193, 192, 192);
     word-break: break-all;
 }
 
@@ -89,7 +92,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background: url(images/unchecked.png);
+    /* background: url(images/unchecked.png); */
     background-position: center;
     background-size: cover;
     top: 50%;
@@ -98,8 +101,9 @@ ul li::before {
 }
 
 ul li.checked {
+    /* background-color: rgba(255, 255, 255, 0.324); */
+    background: transparent;
     color: rgb(139, 139, 139);
-    background-color: rgb(59, 59, 59);
     text-decoration: line-through;
 }
 
@@ -117,18 +121,20 @@ ul li span {
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #ff0000;
+    color: #ffffff;
     line-height: 40px;
     text-align: center;
+    /* border-radius: 0 50% 50% 0; */
     border-radius: 50%;
-    background: transparent;
-    opacity: 0.4;
+    background-color: rgba(128, 128, 128, 0.489);
+    margin: auto;
+    border: 2px solid black;
 }
 
 ul li span:hover {
-    opacity: 1;
     font-size: 2rem;
-    background: #a0a0a0;
+    background: #a0a0a091;
+    border: none;
 }
 
 /* for small devices */
@@ -153,6 +159,7 @@ ul li span:hover {
 
     .row {
         margin: 1rem;
+        padding: 1rem;
         margin-bottom: 3rem;
         width: auto;
         display: flex;
